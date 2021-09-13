@@ -17,10 +17,10 @@ const showProducts = (products) => {
     const div = document.createElement("div");
     div.classList.add("product");
     div.innerHTML = `
-       <div class="card h-100 mt-5 bg-info">
+       <div class="card h-100 mt-5 bg-info pt-3">
             <img class="card-img-top mx-auto" style="width: 150px;height: 150px;" src=${image}></img>
             <div class="card-body text-dark">  
-               <h3 class="card-title">${product.title.slice(0, 20)}</h3>
+               <h3 class="card-title">${product.title.slice(0, 15)}</h3>
                <p class="card-text">Category: ${product.category}</p>
                <p>Average Rating: ${product.rating.rate} by ${product.rating.count} Customers</p>
                <h2>Price: $ ${product.price}</h2>
